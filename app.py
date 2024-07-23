@@ -18,6 +18,6 @@ df = pd.read_csv('./data.csv')
 
 # 进行各方面数据分析，生成详细的HTML报告
 # pr = df.profile_report()
-report = ProfileReport(df, minimal=True, orange_mode=True, explorative=True)
+report = ProfileReport(df, explorative=True)
 # 将生成的报告展示在Streamlit应用程序中
 st_profile_report(report, navbar=True)
