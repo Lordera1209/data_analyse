@@ -10,7 +10,7 @@ import streamlit as st
 import pandas as pd
 # 原为 import pandas_profiling, 新版本中已更新为ydata_profiling
 from ydata_profiling import ProfileReport
-# from streamlit_pandas_profiling import st_profile_report
+from streamlit_pandas_profiling import st_profile_report
 
 st.header("资料信息分析")
 
