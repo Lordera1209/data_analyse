@@ -10,7 +10,7 @@ import streamlit as st
 import pandas as pd
 # 原为 import pandas_profiling, 新版本中已更新为ydata_profiling
 from ydata_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+from streamlit_ydata_profiling import st_profile_report
 
 st.header("资料信息分析")
 
@@ -18,6 +18,6 @@ df = pd.read_csv('./data.csv')
 
 # 进行各方面数据分析，生成详细的HTML报告
 # pr = df.profile_report()
-report = ProfileReport(df)
+report = ProfileReport(df, minimal=True, orange_mode=True, explorative=True)
 # 将生成的报告展示在Streamlit应用程序中
-st_profile_report(report)
+st_profile_report(report, navbar=True)
