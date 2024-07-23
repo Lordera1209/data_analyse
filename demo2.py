@@ -13,7 +13,7 @@ from streamlit_pandas_profiling import st_profile_report
 
 st.header("资料信息分析")
 
-df = pd.read_csv('./data.csv')
+df = pd.read_csv('.data/data.csv')
 
 pr = df.profile_report()
 st_profile_report(pr)
