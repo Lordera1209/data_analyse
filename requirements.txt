@@ -1,6 +1,4 @@
---upgrade pip
 streamlit
-streamlit_pandas_profiling==0.1.3
 pandas
 ydata-profiling==4.7.0
 visions==0.7.6
