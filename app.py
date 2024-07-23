@@ -20,4 +20,4 @@ df = pd.read_csv('./data.csv')
 # pr = df.profile_report()
 report = ProfileReport(df)
 # 将生成的报告展示在Streamlit应用程序中
-# st_profile_report(pr)
+st_profile_report(report)
